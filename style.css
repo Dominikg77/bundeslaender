@@ -1,0 +1,77 @@
+body {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.widht {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: lightgray;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.bbox {
+    display: block;
+    text-decoration: none;
+    border: 5px solid lightgray;
+    padding: 10px;
+    color: black;
+    width: calc(33% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.bbox:hover {
+    border: 5px solid gray;
+}
+
+.text-gray {
+    color: lightgray
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#letterbox {
+    display: flex;
+    gap: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.letter {
+    background-color: lightgray;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media(max-width: 800px) {
+    .bbox {
+        width: calc(50% - 10px);
+    }
+}
+
+@media(max-width: 500px) {
+    .bbox {
+        width: calc(100% - 10px);
+    }
+}
